@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width">
+		<title>Encriptados</title>
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style-encriptador.css">
+		<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+	</head>
+
+	<body onload="inicioPagina()">		
+
+		<header>
+			<h1>a</h1>
+		</header>
+	
+		<main>
+
+			<section>
+				<textarea style="resize: none;" cols="60" rows="10" id="inputTextos" class="input-texto" placeholder="Ingresar texto"></textarea>
+				<div>
+					<h4 class="evitar">Evite mayúsculas y tildes.</h4>				
+				</div>
+				<div class="caja-botones-izq">
+					<button class="boton-encriptar" onclick="botonEncriptar()">Encriptar</button>
+                	<button class="boton-desencriptar" onclick="botonDesencriptar()">Desencriptar</button>
+				</div>
+			</section>
+
+			<section>
+				<textarea style="resize: none;" cols="60" rows="10" class="input-mensaje" disabled></textarea>
+				<div class="caja-botones-der">
+					<button class="boton-copiar" onclick="botonCopiar()">Copiar</button>
+               		<button class="boton-borrar" onclick="botonBorrar()">Borrar</button>
+				</div>
+				
+			</section>
+				
+		</main>
+
+		<footer>
+			<div>
+				<h6 id="icono-texto"></h6>
+			</div>
+			<ul class="redes">
+				<li>
+					<a href="https://github.com/FerAPasco" target="_blank">
+					<img class="iconos" src="imagenes/github.png" onmouseover="mostrarTexto('Visita mi página de GitHub para ver mi portfolio.')" onmouseout="ocultarTexto()">
+					</a>
+				</li>
+				<li>
+					<a href="https://www.linkedin.com/in/fernando-ariel-pasco/" target="_blank">
+					<img class="iconos" src="imagenes/linkedin.png" onmouseover="mostrarTexto('Sigueme en LinkedIn para conocer mis estudios y trabajos.')" onmouseout="ocultarTexto()">
+					</a>	
+				</li>
+				<li>
+					<a href="https://phodas-okus-games.itch.io/" target="_blank">
+					<img class="iconos" src="imagenes/itch.png" onmouseover="mostrarTexto('Conoce mi página de videojuegos y prueba los que quieras.')" onmouseout="ocultarTexto()">
+					</a>					
+				</li>
+			</ul>
+
+			<p class="copyright">&copy Fernando Ariel Pasco mayo 2023</p>
+		</footer>
+		<script src="script.js"></script>
+	</body>
+</html>
